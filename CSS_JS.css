@@ -1,0 +1,9 @@
+#result_line{
+    border : none;
+    border-top : 3px dotted gray
+}
+
+#p strong{
+    font-size: 2.2em;
+    color: orangered;
+}
