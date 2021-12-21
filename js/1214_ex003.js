@@ -32,3 +32,4 @@ element.innerHTML()
 
 //반응형 웹디자인 시 사용, CSS는 미디어쿼리를 JS에 사용하는 메서드 
 window.matchMedia()
+
