@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--danfojs CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.3.3/lib/bundle.min.js"></script>
+    <title>data_range, head, tail</title>
+</head>
+<body>
+    <script>
+        console.log(' 범위 형식의 날짜를 생성합니다. freq는 연도("Y"), 월("M"), 일("D") 등을 기준으로 나눠줄 수 있습니다.');
+        dates = new dfd.date_range({ start: '2021-09-01', end: "2021-12-01", freq: "M" })
+        console.log(dates);
+        console.log("위에서 생성한 변수를 이용해 다시 한번 더 변수를 생성 할 수 있습니다.");
+        obj_data = {"A": dates,
+                    "B" : ["bval1", "bval2", "bval3", "bval4"],
+                    "C" : [10, 20, 30, 40],
+                    "D" : [1.2, 2.34, 56, 78],
+                    "E" : ["test", "train", "test", "train"]
+                    }
+        console.log("이를 데이터 프레임화 해줍니다.");
+        df = new dfd.DataFrame(obj_data)
+        df.print()
+
+        console.log("head()와 tail()을 이용해 데이터 일부를 출력합니다.");
+        df.head(2).print()
+        df.tail(2).print()
+    </script>
+</body>
+</html>

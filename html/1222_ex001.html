@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--danfojs를 불러오기 위한 코드 삽입 -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.3.3/lib/bundle.min.js"></script>
+    <title>danfoJS사용</title>
+</head>
+<body>
+    <script>
+        console.log("dfd의 Series()를 사용해 인스턴스 s 를 생성합니다.");
+        console.log("인스턴스 s는 2가지 방법으로 출력할 수 있습니다.");
+        s = new dfd.Series([1,2,3,3,3,4,5,6]);
+        console.log(s);
+        console.log(`s.$data : ${s.$data}`);
+        console.log("또한 원하는 범위만큼 슬라이싱도 가능합니다.");
+        console.log(`s.$data.slice(0,3) : ${s.$data.slice(0,3)}`);
+        console.log(" 변수 s를 출력하는 print() 함수 입니다.");
+        s.print();
+        console.log("앞열은 인덱싱 번호, 뒷열은 요소 값입니다.");
+    </script>
+</body>
+</html>

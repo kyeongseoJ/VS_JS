@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--danfojs CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.3.3/lib/bundle.min.js"></script>
+    <title>tensor()</title>
+</head>
+<body>
+    <script>
+        console.log("danfojs 라이브러리에서 tensorflow를 불러올 수 있습니다.");
+        console.log("텐서플로우에서 사용되는 데이터 타입으로 tensor()를 활용합니다.");
+        const tf = dfd.tf;
+        let tensor_arr = tf.tensor([12, 34, 56, 78, 90]);
+        tensor_arr.print();
+
+        console.log("dfd.Series()함수를 이용해 생성된 변수를 인스턴스화 할 수 있습니다.");
+        let s = new dfd.Series(tensor_arr);
+        s.print();
+
+    </script>
+</body>
+</html>
