@@ -59,8 +59,18 @@ const obj ={
 console.log(obj.name)
 console.log(obj.age)
 
-
 console.log(obj.name, obj.age)
+
+// 객체 안에 함수도 작성 가능
+const func001 = {
+    a : 1,
+    b : 2,
+    say(a,b){
+        console.log(a+b)
+    }
+}
+
+
 
 // 배열은 = []
 const arr =["안녕하세요", 1234, {a:1, b:2}, [1,2,3,4]]
