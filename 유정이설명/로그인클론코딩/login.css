@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* 위아래 */
+    justify-content: center;
+    /* 좌우 */
+    align-items: center; 
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.header{
+    margin-top: 2rem;
+}
+
+/*MAIN*/
+.main{
+    margin-top:  2rem;
+}
+
+.id_container{
+    display: flex;
+    width: 503px;
+    height: 60px;
+    align-items: center;
+    border: 1px solid slategray;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0; /*시계방향 순*/
+    padding: 17px 18px 17px 19px;
+}
+
+.pw_container{
+    display: flex;
+    width: 503px;
+    height: 60px;
+    align-items: center;
+    border: 1px solid slategray;
+    box-sizing: border-box;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 17px 18px 17px 19px;
+}
+
+.vision-icon,
+.show-icon,
+.icon-id,
+.icon-pw{
+    font-size: 20px;
+    color: slategray;
+}
+
+.show{
+    display: none;
+}
+
+.icon-id,
+.icon-pw{
+    padding-right: 5px;
+}
+
+.id,
+.pw{
+    width: 438px;
+    font-size: 20px;
+}
+ /* 아이콘 기본 16px */
+
+.text_container{
+    margin: 22px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.id_text,
+.pw_text,
+.login_fail{
+    color: tomato;
+    display: none;
+}
+
+.login_btn{
+    width: 503px;
+    height: 60px;
+    background-color: salmon;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login_btn:hover{
+    background-color: rgb(235, 117, 103);
+}
+
+/* display : none : 차지하는 값과 함께 안보이게 사라짐 
+display : block : 위아래로 쌓이는 블럭개념, 보여짐
+display : flex(주로 컨테이너에 사용), inline(주로 요소에 직접 사용) : 보여짐, 중앙정렬이 좀 더 쉬워짐 
+ visiablity : hidden  자리는 차지하고 사라짐 */
+

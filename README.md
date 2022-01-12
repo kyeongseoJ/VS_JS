@@ -26,6 +26,17 @@
 11. 12.20 객체 이벤트 공부 
 12. 12.21 프로젝트 아이디어 정리 
 13. 12.22 객체와 함수 활용 추가 공부 
+14. 12.23~26 휴식
+15. 12.27 p5와 danfo.js 관련 조사
+16. 12.28 유정이 민서 js 스터디 시작
+17. 12.28~31 JS 스터디 구글 meet 활용
+
+// 12.31~01.06 Berire 독일에서 한국 놀러옴+가족여행
+
+18. 01.07 JS 공부 재시작
+19. 01.08~12 HTML 부족함 인지, html기초공부 추가
+20. 
+
 
 
 # 학습 참고자료
@@ -35,6 +46,8 @@
 - https://developer.mozilla.org/ko/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started
 - https://learnjs.vlpt.us/
 - https://react.vlpt.us/
+- 유튜브 유노코딩
+- 노마드코더 바닐라 JS+ html/css 기초 
 
 
 
