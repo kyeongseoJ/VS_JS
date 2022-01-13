@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: olivedrab;
+}
+
+body {
+    height:  100%;
+}
+
+a{
+text-decoration: none;
+color: rosybrown;
+font-weight: 600;
+}
+
+ul{
+    list-style-type: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 25% 씩 4칸 나눔  */
+    grid-template-rows: repeat(5, 200px);
+    /* 400px 씩 5줄 나눔 */
+    gap: 1rem;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+/* HEADER */
+.header{
+    grid-area: header;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5rem;
+}
+
+.header__logo{
+    position: relative;
+    top: -45px;
+    left: 45px;
+}
+
+.logo__img{
+    width: 100px;
+    height: 100px;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.list_item{
+    margin: 0 1rem;
+}
+
+.list_item > a:hover{
+    text-decoration: underline;
+}
+
+/* MAIN */
+.main{
+    grid-area: main;
+    background-color: bisque;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "nav section section section";
+}
+
+.main__nav{
+    grid-area: nav;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    font-size: 40px;
+    color: white;
+    padding: 2rem 0;
+}
+
+.icons:hover{
+    color: orangered;
+}
+
+.section{
+    grid-area: section;
+    background-color: oldlace; 
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 ,1fr);
+    grid-template-areas: 
+    "article1 article2"
+    "article3 article4";
+}
+
+.article1{
+    grid-area: article1;
+}
+
+.article2{
+    grid-area: article2;
+}
+
+.article3{
+    grid-area: article3;
+}
+
+.article4{
+    grid-area: article4;
+}
+
+.img img{
+    width: 100%;
+    height: 295px;
+}
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.footer__text{
+    align-items: center;
+    color: goldenrod;
+    padding: 32px;
+}
+
+
+.upicon{
+    color: olive;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+.dwicon{
+    color: olive;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    font-size: 20px;
+}
