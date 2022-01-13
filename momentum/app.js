@@ -29,5 +29,33 @@
 //myName = "Kyeongseo"; // 만들어진 변수가 있을때는 그냥 재할당만 해주면 된다. 예약어가 없음
 //console.group("your name is " + myName);
 
+const { flatten } = require("@tensorflow/tfjs-layers/dist/exports_layers");
 
+// conditional 조건문 작성 하기
+// const age = parseInt(prompt("How old are you?"));
+
+// if (isNaN(age)) {
+//     console.log("Pls write a number.");
+// }else {
+//     console.log("Thank you fot writing your age.")
+// }
+const age = parseInt(prompt("How old are you?"));
+
+if (isNaN(age) || age < 0) {
+    console.log("Pls write a real positive number.");
+}else if(age < 18){
+    console.log("You are too young.")
+} else if(age >= 18 && age <= 50){
+    console.log("You can drink.")
+} else if(age > 50 && age <= 80){
+    console.log("You should exercise.")
+}
+else {
+    console.log("You can do whatever you want.")
+}
+
+true || true === true
+true || false === false
+false || true === false
+false || false === false
 
