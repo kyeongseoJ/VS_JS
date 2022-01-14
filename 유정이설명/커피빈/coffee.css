@@ -15,23 +15,66 @@ ul{
     list-style-type: none;
 }
 /* HEADER */
-.header{
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    background-color: brown;
-}
 
 .nav{
-
+    height: 60px;
+    width: 100%;
+    /* background-color: beige; */
+    position: fixed;
+    top: 0;
 }
 
-.menu__list{
-    
+.nav li{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
-.menu__item{
+.nav li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
 
+.nav li:nth-child(1) a{
+    background-image: url(https://www.coffeebeankorea.com/images/btn/btn_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 21px;
+}
+.nav li:nth-child(2) a{
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+}
+.nav li:nth-child(3) a{
+    background-image: url(./shop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.nav li:nth-child(4) a{
+    background-image: url(./coffee_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+.nav li:nth-child(1){
+    float: left;
+}
+.nav li:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: calc(50% - 20px);
+}
+.nav li:nth-child(3){
+    float: right;
+}
+.nav li:nth-child(4){
+    float: right;
 }
 
 /* MAIN */
@@ -39,6 +82,33 @@ ul{
     height: 1000px;
 }
 
+.info{
+    margin-top: 60px;
+    background-color: rgb(105,81,157);
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info p{
+    margin: 0 20px;;
+    font-size: 12px;
+}
+
+.section{
+    clear: both;
+    margin: 20px 20px 55px;
+
+}
+
+.box1,
+.box2{
+    height: 40px;
+    background-color: rgb(238,238,238);
+    margin-bottom: 10px;
+    padding: 0 30px 0 15px;
+}
 
 /* FOOTER */
 .footer{
