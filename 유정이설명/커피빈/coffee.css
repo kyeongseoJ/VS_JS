@@ -15,10 +15,29 @@ ul{
     list-style-type: none;
 }
 /* HEADER */
+.header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: brown;
+}
 
+.nav{
+
+}
+
+.menu__list{
+    
+}
+
+.menu__item{
+
+}
 
 /* MAIN */
-
+.main{
+    height: 1000px;
+}
 
 
 /* FOOTER */
