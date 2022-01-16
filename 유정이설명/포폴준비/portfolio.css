@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header{
+    background-color: white;
+    height: 60px;
+}
+
+/* MAIN */
+.main{
+    height: 900px;
+    background-color: white;
+}
+
+.page1,
+.page2,
+.page3{
+    height: 300px;
+}
+
+.page1{
+    background-color: blanchedalmond;
+}
+
+.block1{
+    background-color: palevioletred;
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+.block2{
+    background-color: rosybrown;
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+.block3{
+    background-color: pink;
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+.page2{
+    background-color: bisque;
+}
+
+.page3{
+    background-color: burlywood;
+}
+
+/* FOOTER */
+.footer{
+    height: 100px;
+    background-color: slategray;
+    text-align: center;
+    color: white;
+}
