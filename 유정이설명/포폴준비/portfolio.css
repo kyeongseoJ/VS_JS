@@ -16,41 +16,27 @@ body{
     "main main main main main"
     "main main main main main"
     "main main main main main"
-    "main footer footer footer footer";
+    "footer footer footer footer footer";
 }
 
 /* HEADER */
 .header{
-    background-color: white;
+    grid-area: header;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5rem;
 }
 
 /* MAIN */
 .main{
+    grid-area: main;
     background-color: white;
-}
-
-.page1{
-    background-color: burlywood;
-}
-
-.p1__block1{
-    background-color: palevioletred;
-}
-
-.p1__block2{
-    background-color: rosybrown;
-}
-
-.p1__block3{
-    background-color: pink;
-}
-
-.page2{
-    background-color: bisque;
-}
-
-.page3{
-    background-color: bisque;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "nav section section section section";
 }
 
 /* FOOTER */
