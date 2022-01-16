@@ -25,7 +25,7 @@ ul{
     grid-template-columns: repeat(4, 1fr);
     /* 25% 씩 4칸 나눔  */
     grid-template-rows: repeat(5, 200px);
-    /* 400px 씩 5줄 나눔 */
+    /* 200px 씩 5줄 나눔 */
     gap: 1rem;
     grid-template-areas: 
     "header header header header"
