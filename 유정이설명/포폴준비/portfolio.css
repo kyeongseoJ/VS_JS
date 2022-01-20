@@ -27,14 +27,16 @@ ul{
 
 /* HEADER */
 .header{
-    background-color: blanchedalmond;
+    background-color: maroon;
     padding: 0 15px;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo__container{
+.logo_container{
     height: 50px;
     display: flex;
     align-items: center;
@@ -43,17 +45,22 @@ ul{
 .logo{
     font-size: 20px;
     font-weight: 600;
-}
-.nav{
-    width: 100%;
-    background-color: blanchedalmond;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
+    color: white;
 }
 
-.open__menu,
-.close__menu{
+/* NAVIGATION */
+
+.nav{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: maroon;
+    right: 0;
+    top: 0;
+}
+
+.open_menu,
+.close_menu{
     width: 50px;
     height: 50px;
     display: flex;
@@ -62,36 +69,35 @@ ul{
     color: white;
 }
 
-.open__menu{
+.open_menu{
     justify-content: flex-end;
 }
 
-.open__icon,
-.close__icon{
+.open_icon,
+.close_icon{
     font-size: 35px;
     cursor: pointer;
 }
 
-.close__menu{
+.close_menu{
     position: absolute;
     right: calc(50% - 50px);
     display: none;
 }
 
-.menu__list{
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    background-color: blanchedalmond;
-    right:-50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.menu_list{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-.menu__items{
+
+.menu_items{
     padding: 15px 0;
+}
+
+.show{
+    right: 0;
 }
 
 /* MAIN */
@@ -105,16 +111,24 @@ ul{
     align-items: center;
 }
 
-.my__img{
+.my_img{
     width: 200px;
-    height: 200px;
+    height: 250px;
     background-color: coral;
     border-radius: 50%;
     text-align: center;
 }
+
+.my_img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 /* === ABOUTME === */
 .aboutme{
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -123,7 +137,7 @@ ul{
     text-align: center;
 }
 
-.edu__container{
+.edu_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -132,7 +146,7 @@ ul{
     margin-bottom: 3rem;
 }
 
-.edu__info{
+.edu_info{
     text-align: right;
     margin-bottom: 10px;
 }
@@ -170,17 +184,17 @@ ul{
     text-align: right;
 }
 
-.html__per {
+.html_per {
     height: 5px;
     width: 15%;
     background-color: darkslateblue;
 }
-.python__Per{
+.python_Per{
     height: 5px;
     width: 40%;
     background-color: darkslateblue;
 }
-.javascript__per{
+.javascript_per{
     height: 5px;
     width: 20%;
     background-color: darkslateblue;
@@ -191,7 +205,7 @@ ul{
     text-align: center;
 }
 
-.portfolio__info{
+.portfolio_info{
     padding: 0.8rem;
     background-color: firebrick;
     border-radius: 5px;
@@ -205,22 +219,22 @@ ul{
     color: white;
 }
 
-.work__img > img {
+.work_img > img {
     width: 100%;
 }
 
-.work__info{
+.work_info{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.work__link > a{
+.work_link > a{
     font-size: 12px;
     color: white;
 }
 
-.work__link > a:hover{
+.work_link > a:hover{
     text-decoration: underline;
 }
 /* === CONTACT === */
@@ -236,7 +250,7 @@ ul{
     text-align: center;
 }
 
-.contact__info{
+.contact_info{
     margin-bottom: 1.5rem;
 }
 
@@ -255,7 +269,7 @@ ul{
     padding: 5px 10px;
 }
 
-.form__button{
+.form_button{
     width: 100px;
     height: 35px;
     font-size: 18px;
@@ -264,6 +278,7 @@ ul{
     border-radius: 5px;
     border: none;
     font-weight: 550;
+    cursor: pointer;
 }
 
 .form .input:focus{
@@ -272,7 +287,7 @@ ul{
 
 /* FOOTER */
 .footer{
-    background-color: blanchedalmond;
+    background-color: maroon;
     color: white;
     padding: 10px 20px;
     text-align: center;
