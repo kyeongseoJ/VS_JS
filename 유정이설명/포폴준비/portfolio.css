@@ -55,8 +55,9 @@ ul{
     width: 50%;
     height: 100vh;
     background-color: maroon;
-    right: 0;
+    right: -50%;
     top: 0;
+    transition: .5s;
 }
 
 .open_menu,
@@ -81,19 +82,35 @@ ul{
 
 .close_menu{
     position: absolute;
-    right: calc(50% - 50px);
+    top: 0;
+    left: 0;
     display: none;
 }
 
 .menu_list{
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
-
 
 .menu_items{
     padding: 15px 0;
+    width: 55%;
+    cursor: pointer;
+}
+.menu_items:hover {
+    background-color: rgb(143, 24, 24);
+}
+.menu_items >a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
 }
 
 .show{
@@ -242,8 +259,16 @@ align-items: center;
     width: 100%;
 }
 
-.email{
+.information{
     text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.contact_icon{
+    font-size: 20px;
+    padding-right: 1rem;
 }
 
 .contact > title{
@@ -299,7 +324,13 @@ align-items: center;
 
 /* === MEDIA QUERY (700PX, 1024PX) === */
 @media screen and (min-width: 700px) {
-    
+    .nav{
+        width: 30%;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 1024px) {
