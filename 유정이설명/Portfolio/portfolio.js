@@ -11,5 +11,4 @@ openMenu.on('click', () => {
 closeMenu.on('click', () => {
     console.log('close menu')
     nav.removeClass('show')
-    closeMenu.css({'display':'flex'})
 })

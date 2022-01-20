@@ -12,6 +12,7 @@ body{
     height: 100vh;
     scroll-behavior: smooth;
     text-transform: uppercase;
+    background-color: rgb(241, 241, 236);
 }
 
 a{
@@ -149,6 +150,26 @@ ul{
     text-align: center;
 }
 
+.download_btn{
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px dotted maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(241, 241, 236);
+    margin-top: 1rem;
+}
+
+.download_btn:hover{
+    background-color: rgb(143, 24, 24);
+}
+
+.download_btn a:hover{
+    color: white;
+}
+
 /* === EDUCATION === */
 .education{
     text-align: center;
@@ -234,8 +255,9 @@ padding: 1rem;
 
 .portfolio_info{
     padding: 0.8rem;
-    background-color: firebrick;
+    background-color: rgb(241, 241, 236);;
     border-radius: 5px;
+    border: 2px solid maroon;
 }
 
 .work{
@@ -243,11 +265,11 @@ padding: 1rem;
     grid-template-columns: 1.6fr 0.4fr;
     gap: 1rem;
     padding: 2rem 0;
-    color: white;
 }
 
 .work_img > img {
     width: 100%;
+    border-radius: 3px;
 }
 
 .work_info{
@@ -258,7 +280,6 @@ padding: 1rem;
 
 .work_link > a{
     font-size: 12px;
-    color: white;
 }
 
 .work_link > a:hover{
@@ -352,6 +373,38 @@ padding: 1rem;
     }
 }
 
+@media screen and (min-width: 850px) {
+    .portfolio{
+        width: 100%;
+    }
+    .portfolio_info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .work{
+        display: block;
+    }
+    .work_info{
+        text-align: right;
+    }
+}
+
 @media screen and (min-width: 1024px) {
-    
+    .header{
+        position: static;
+    }
+    .nav{
+        top: 0px;
+        width: 30%;
+        right: 0;
+        position: fixed;
+    }
+    .open_menu,
+    .close_menu{
+        display: none !important;
+    }
+    .main{
+        width: 70%;
+    }
 }
