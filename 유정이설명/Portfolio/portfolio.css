@@ -114,6 +114,7 @@ ul{
     font-weight: 600;
 }
 
+
 .show{
     right: 0;
 }
@@ -255,21 +256,31 @@ padding: 1rem;
 
 .portfolio_info{
     padding: 0.8rem;
-    background-color: rgb(241, 241, 236);;
-    border-radius: 5px;
-    border: 2px solid maroon;
 }
 
 .work{
     display: grid;
-    grid-template-columns: 1.6fr 0.4fr;
+    grid-template-columns: 1.5fr 0.5fr;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+    border: 2px solid maroon;
+    margin-top: 1rem;
+}
+
+.work_title{
+    font-weight: bold;
+}
+
+.work_skill{
+    color: goldenrod;
 }
 
 .work_img > img {
     width: 100%;
-    border-radius: 3px;
+    border-radius: 7px;
+    margin-left: .5rem;
+    /* border: .5px solid goldenrod; */
 }
 
 .work_info{
@@ -354,6 +365,18 @@ padding: 1rem;
 }
 
 /* === MEDIA QUERY (700PX, 1024PX) === */
+@media screen and (max-width: 440px) {
+    .work_title{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .work_skill{
+        font-size: 11px;
+    }
+    .work_info a{
+        font-size: 11px;
+    }
+}
 @media screen and (min-width: 700px) {
     .nav{
         width: 30%;
@@ -366,6 +389,15 @@ padding: 1rem;
     .edu_info{
         text-align: right;
         margin-bottom: 10px;
+    }
+    .work{
+        margin-bottom: 1rem;
+    }
+    .work_img > img {
+        margin-left: 1rem;
+    }
+    .work_info{
+        margin-left: .5rem;
     }
     .contact{
         display: grid;
@@ -387,6 +419,20 @@ padding: 1rem;
     }
     .work_info{
         text-align: right;
+    }
+    .work_img > img {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: .6rem;
+    }
+    .work_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 1rem;
+        margin-top: 1rem;
     }
 }
 

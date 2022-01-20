@@ -1,0 +1,437 @@
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    scroll-behavior: smooth;
+    text-transform: uppercase;
+    background-color: rgb(253, 253, 249);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.title {
+    margin-bottom: 3rem;
+}
+
+
+/* === HEADER === */
+.header {
+    background-color: blanchedalmond;
+    padding: 0 15px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* === NAVIGATION === */
+.nav {
+    width: 70%;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: -70%;
+    background-color: blanchedalmond;
+    transition: 1s;
+}
+
+.open__menu,
+.close__menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.open__menu {
+    justify-content: flex-end;
+}
+
+.open__icon,
+.close__icon {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.close__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menu__items {
+    padding: 15px 0;
+    width: 75%;
+    cursor: pointer;
+}
+
+.menu__items:hover {
+    background-color: rgb(240, 206, 156);
+    transition: .2;
+}
+
+.menu__items > a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.show {
+    right: 0;
+}
+
+/* === MAIN === */
+.main {
+    padding: 50px 20px 10px 20px;
+}
+
+.section {
+    padding: 100px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === INTRODUCE === */
+.my__img {
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.my__img > img{
+    width: 100;
+}
+.introduce {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.download_btn {
+    width: 200px;
+    height: 50px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.download_btn:hover {
+    background-color: coral;
+}
+
+.download_btn > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+/* === EDUCATION === */
+.education {
+    text-align: center;
+}
+
+.education > div {
+    padding: 1rem;
+}
+
+.education__info {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.edu__college {
+    color: cornflowerblue;
+    font-weight: 500;
+    padding-bottom: .5rem;
+    font-size: 13px;
+}
+
+.edu__course {
+    font-size: 14px;
+}
+
+.edu__date {
+    font-weight: bolder;
+}
+
+/* === SKILLS === */
+.skill {
+    width: 100%;
+}
+.skill > .title {
+    text-align: center;
+}
+
+.python,
+.js,
+.html {
+    padding-bottom: 1rem ;   
+}
+
+.skill__icon {
+    font-size: 20px;
+}
+
+.lang_package {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.per {
+    text-align: right;
+}
+
+.python__per {
+    height: 5px;
+    width: 60%;
+    background-color: rgba(255, 0, 0, 0.952)
+}
+
+.js__per {
+    height: 5px;
+    width: 15%;
+    background-color: rgb(5, 161, 0);
+}
+
+.html__per {
+    height: 5px;
+    width: 15%;
+    background-color: darkblue;
+}
+
+/* === PORTFOLIO === */
+.portfolio > .title {
+    text-align: center;
+}
+
+.portfolio__info {
+    padding: .8rem;
+    background-color: darkkhaki;
+    border-radius: 5px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1.4fr .6fr;
+    gap: 1rem;
+    padding: 2rem 0;
+    color: white;
+}
+
+
+.work__img > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.work__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.work__link > a {
+    font-size: 12px;
+    color: white;
+}
+
+.work__link > a:hover {
+    text-decoration: underline;
+}
+
+/* === CONTACT === */
+.contact {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.contact__info {
+    margin-bottom: 1.5rem;
+}
+
+.information {
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.contact_icon {
+    font-size: 20px;
+    padding-right: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form div {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form .input {
+    width: 100%;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+.form .input:focus {
+    outline-color: blanchedalmond;
+}
+
+.form__btn {
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: coral;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background-color: chocolate;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: blanchedalmond;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-weight: bolder;
+}
+
+
+/* === MEDIA QUERY (700PX, 1024PX) === */
+@media screen and (min-width: 700px) {
+    .nav {
+        width: 50%;
+    }
+
+    .education > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .education__info {
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .portfolio {
+        width: 100%;
+    }
+    
+    .portfolio__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;   
+    }
+
+    .work {
+        display: block;
+    }
+
+    .work__info {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        position: static;
+
+    }
+
+    .nav {
+        top: 0;
+        width: 30%;
+        right: 0;
+        position: fixed;
+    }
+
+    .close__menu {
+        display: none !important;
+    }
+
+    .main {
+        width: 70%;
+    }
+}
