@@ -136,7 +136,7 @@ ul{
     text-align: center;
 }
 
-.my_img{
+.my_img >img{
     width: 200px;
     height: 250px;
     border-radius: 50%;
@@ -154,26 +154,30 @@ ul{
     text-align: center;
 }
 
-.edu_container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.education_info{
+padding: 1rem;
 }
+
 .title{
     margin-bottom: 3rem;
 }
 
 .edu_info{
-    text-align: right;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
     margin-bottom: 10px;
+    text-align: left;
+    gap: 1rem;
 }
 
 .graduation_uni{
-    color: darkgray;
+    color: goldenrod;
+    font-weight: bold;
 }
 .graduation_date{
     font-weight: bold;
 }
+.graduation,
 .graduation_department{
     font-size: 14px;
 }
@@ -195,6 +199,12 @@ ul{
 
 .skill-icon{
     font-size: 20px;
+}
+
+.lang_package{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .per{
@@ -326,6 +336,15 @@ ul{
 @media screen and (min-width: 700px) {
     .nav{
         width: 30%;
+    }
+    .education_info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .edu_info{
+        text-align: right;
+        margin-bottom: 10px;
     }
     .contact{
         display: grid;
