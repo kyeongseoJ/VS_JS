@@ -12,3 +12,13 @@ closeMenu.on('click', () => {
     console.log('close menu')
     nav.removeClass('show')
 })
+
+let isMove = false;
+if(window.scrollY >= 800){
+    if(isMove){
+        $(`.html_per`).addClass('python_tran')
+        $(`.html_per`).addClass('html_tran')
+        $(`.javascript_per`).addClass('js_tran')
+    }
+}
+

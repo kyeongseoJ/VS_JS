@@ -235,20 +235,34 @@ padding: 1rem;
 
 .html_per {
     height: 5px;
-    width: 15%;
+    width: 1%;
     background-color: darkslateblue;
 }
 .python_Per{
     height: 5px;
-    width: 40%;
+    width: 1%;
     background-color: darkslateblue;
 }
 .javascript_per{
     height: 5px;
-    width: 20%;
+    width: 1%;
     background-color: darkslateblue;
 }
 
+/* TRANSITION */
+
+.html_tran{
+    width: 15%;
+    transition: .5s;
+}
+.python_tran{
+    width: 40%;
+    transition: .5s;
+}
+.js_tran{
+    width: 20%;
+    transition: .5s;
+}
 /* === PORTFOLIO === */
 .portfolio > .title{
     text-align: center;
