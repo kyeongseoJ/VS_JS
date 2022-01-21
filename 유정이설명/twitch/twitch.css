@@ -41,10 +41,18 @@ ul{
     justify-content: center;
 }
 
-.dot_icon,
+.dot_icon{
+    font-size: 22px;
+    color: white;
+}
 .logo_icon{
     font-size: 28px;
     color: white;
+}
+
+.logo_icon:hover{
+    color: purple;
+    background-color: white;
 }
 
 .link{
@@ -65,6 +73,9 @@ ul{
     color: white;
     font-size: 14px;
 }
+.link > a:hover{
+    color: rebeccapurple;
+}
 .link:first-child{
     padding: 0;
 }
@@ -75,7 +86,7 @@ ul{
     width: 48px;
 }
 
-/* HEADER_CENTER */
+/* ======= HEADER_CENTER ======= */
 .header_center{
     width: 49rem;
     display: flex;
@@ -102,6 +113,8 @@ ul{
 }
 .search:focus{
     outline: none;
+    border-color: rebeccapurple;
+    background-color: black;
 }
 .search_icon{
     font-size: 24px;
@@ -121,7 +134,7 @@ ul{
     background-color: #aaaaaa;
 }
 
-/* HEADER_RIGHT */
+/* ======= HEADER_RIGHT ======= */
 .header_right{
     display: flex;
 }
@@ -132,6 +145,16 @@ ul{
 }
 .right_icon i{
     font-size: 20px;
+}
+.right_icon div{
+    padding: 10px 0;
+    margin-right: 10px;
+    width: 35px;
+}
+.right_icon div i{
+    font-size: 30px;
+    padding-top: 5px;
+    color: turquoise;
 }
 
 .link,
@@ -150,9 +173,9 @@ ul{
     width: 50.2px;
     background-color: #222222;
     border-top: 2px solid black;
-    height: 100%;
-    position: relative;
-    top: 50px;
+    height: 100vh;
+    position: absolute;
+    margin-top: 50px;
 }
 
 .menu_open,
@@ -163,12 +186,31 @@ ul{
     padding: 5px 0;
     margin: 5px 0;
 }
+.menu_open div,
+.menu_close div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_open div:hover,
+.menu_close div:hover {
+    background-color: #666666;
+    opacity: 1;
+    border-radius: 5px;
+} 
+
+.menu_close{
+    display: none;
+}
 
 .close_icon,
 .open_icon,
 .follow_icon{
     font-size: 20px;
-    color: white;
+    color: #aaaaaa;
+    cursor: pointer;
 }
 
 .follow{
@@ -177,5 +219,25 @@ ul{
     align-items: center;
     padding: 10px 0;
 }
+
+.box,
+.box_re{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.following,
+.recommend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* MAIN */
+
 
 
