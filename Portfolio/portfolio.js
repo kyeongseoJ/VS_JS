@@ -1,6 +1,9 @@
+
 const openMenu = $(`.open_menu`)
 const closeMenu = $(`.close_menu`)
 const nav = $(`.nav`)
+
+let isMove = false;
 
 openMenu.on('click', () => {
     console.log('open menu')
@@ -13,12 +16,18 @@ closeMenu.on('click', () => {
     nav.removeClass('show')
 })
 
-let isMove = false;
-if(window.scrollY >= 800){
-    if(isMove){
-        $(`.html_per`).addClass('python_tran')
-        $(`.html_per`).addClass('html_tran')
-        $(`.javascript_per`).addClass('js_tran')
+$(window).on('click', () => {
+    console.log('click')
+    nav.removeClass('show')
+})
+
+$(window).scroll(()=>{
+    if(scrollY >= 700){
+        if(!isMove){
+            $('.python_Per').addClass('python_tran')
+            $('.html_per').addClass('html_tran')
+            $('.javascript_per').addClass('js_tran')
+        }
     }
-}
+})
 
