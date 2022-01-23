@@ -25,17 +25,21 @@ ul {
 
 /* HEADER */
 .header {
-    height: 30px;
+    height: 50px;
     width: 100%;
-    background-color: tomato;
+    background-color: burlywood;
+    display: fixed;
 }
 
 /* NAVIGATION */
 .nav {
+    width: 100%;
+    height: 30px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     margin-right: 10px;
+    background-color: rgb(38, 63, 109);
 }
 
 .menu_list {
@@ -53,9 +57,29 @@ ul {
     font-weight: 600;
 }
 /* MAIN */
+.main {
+    height: 1500px;
+    display: grid;
+    grid-template-rows: repeat(3, 500px);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "grid_container grid_container grid_container grid_container grid_container grid_container"
+    "grid_container grid_container grid_container grid_container grid_container grid_container"
+    "grid_container grid_container grid_container grid_container grid_container grid_container" ;
+}
 
+.grid_container{
+grid-area: grid_container;
+}
 
 /* FOOTER */
-
-
+.footer {
+    background-color: burlywood;
+    font-size: 13px;
+    padding: 30px 0px;
+    text-align: center;
+}
+.footer_text {
+    font-weight: 60000;
+}
 
