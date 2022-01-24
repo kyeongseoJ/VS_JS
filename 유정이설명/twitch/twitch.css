@@ -299,11 +299,16 @@ a {
 .user_name p {
     color: #EFEFF1;
     font-size: 13px;
-    width: 129px;
 }
 .user_box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 190px;
+}
+.user_live{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 .on_live {
@@ -316,6 +321,7 @@ a {
     font-size: 13px;
     color: #EFEFF1;
     font-weight: 600;
+    margin-left: 5px;
 }
 
 

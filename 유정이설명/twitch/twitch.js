@@ -14,6 +14,7 @@ openIcon.addEventListener('click', () => {
     document.querySelector('.nav_icons').classList.add('static')
     document.querySelector('.follow_channel').classList.add('none')
     document.querySelector('.close').classList.add('flex')
+    document.querySelector('.user_box').classList.add('none')
 })
 
 closeIcon.addEventListener('click', () => {
