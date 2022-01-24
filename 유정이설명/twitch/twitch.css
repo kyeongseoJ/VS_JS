@@ -197,6 +197,7 @@ a {
 .icon {
     font-size: 20px;
     color: #EFEFF1;
+    cursor: pointer;
 }
 .user_icon {
     font-size: 35px;
@@ -248,6 +249,7 @@ a {
 .close_icon {
     font-size: 20px;
     color: #EFEFF1;
+    cursor: pointer;
 }
 .close {
     margin: 5px 0;
@@ -262,20 +264,61 @@ a {
 .show_nav{
     width: 50px;
 }
-
 .close {
     display: none;
 }
 .static {
     position: static;
 }
-
 .flex {
     display: flex;
 }
-
 .none {
     display: none;
 }
+/* === navbar more ===*/
+.user_info {
+    width: 240px;
+    height: 42px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_image {
+    width: 30px;
+    height: 30px;
+    background-color: #EFEFF1;
+    border-radius: 50%;
+}
+.user_name span{
+    font-size: 14px;
+    color: #EFEFF1;
+    font-weight: 600;
+}
+.user_name p {
+    color: #EFEFF1;
+    font-size: 13px;
+    width: 129px;
+}
+.user_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.on_live {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+.view {
+    font-size: 13px;
+    color: #EFEFF1;
+    font-weight: 600;
+}
+
+
+
 
 
