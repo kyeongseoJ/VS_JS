@@ -217,7 +217,8 @@ a {
 
 /* === main === */
 .main {
-    height: 100vh;
+    width: 100%;
+    height: 1000px;
     background-color: #0E0E10;
     padding-left: 240px;
     padding-top: 50px;
@@ -505,7 +506,7 @@ a {
     border-radius: 50%;
     background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/jdm2088-profile_image-c46fd83bd8115db2-150x150.png);
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 40px;
     background-position: center;
 }
 .stremer_info {
@@ -565,16 +566,85 @@ a {
     font-weight: 600;
     padding-bottom: 10px;
 }
+.grid {
+    padding-bottom: 20px;
+}
 .content_section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-
 .content_image {
-    width: 100%;
     padding-bottom: 10px;
 }
+.content_image img {
+    width: 100%;
+}
+.content_section_image {
+    width: 40px;
+    height: 40px;
+    background-color: #BF94FF;
+    border-radius: 50%;
+}
+.naen {
+    background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/94761985-74ee-4a54-9910-718c31e2274d-profile_image-50x50.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+}
+.chodan {
+    background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/2067380c-6c8f-4a4d-9f68-65c13572a59b-profile_image-50x50.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+}
+.kuiki {
+    background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/ca8c078c-bb3a-4971-86ed-b720f16e82bf-profile_image-50x50.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+}
+
+/* === room === */
+.room_container {
+    display: flex;
+}
+.room {
+    padding-left: 5px;
+}
+.room_name {
+    font-size: 14px;
+    color: #DEDEE3;
+    font-weight: 600;
+}
+.room_maker,
+.room_game {
+    font-size: 13px;
+    color: #ADADB8;
+    font-weight: 600;
+}
+.room_thema {
+    display: flex;
+    padding-top: 5px;
+}
+.room_thema div {
+    background-color: #464649;
+    border-radius: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 5px 0;
+}
+.room_thema div p {
+    color: #C8C8C9;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+
+
 
 /* === JS class === */
 .display_none {
