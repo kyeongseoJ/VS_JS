@@ -1,7 +1,7 @@
 const toggleIcon = document.querySelector('.toggle_icon')
 const openIcon = document.querySelector('.open_icon')
 const closeIcon = document.querySelector('.close_icon')
-
+const userBox = document.querySelectorAll('.user_box')
 
 toggleIcon.addEventListener('click', () => {
     console.log('cklicked')
@@ -14,7 +14,10 @@ openIcon.addEventListener('click', () => {
     document.querySelector('.nav_icons').classList.add('static')
     document.querySelector('.follow_channel').classList.add('none')
     document.querySelector('.close').classList.add('flex')
-    document.querySelector('.user_box').classList.add('none')
+
+    for (let i of userBox) {
+        i.classList.add('display_none')
+    }
 })
 
 closeIcon.addEventListener('click', () => {
@@ -23,5 +26,8 @@ closeIcon.addEventListener('click', () => {
     document.querySelector('.nav_icons').classList.remove('static')
     document.querySelector('.follow_channel').classList.remove('none')
     document.querySelector('.close').classList.remove('flex')
+    for (let i of userBox) {
+        i.classList.remove('display_none')
+    }
 })
 
