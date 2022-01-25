@@ -219,6 +219,8 @@ a {
 .main {
     height: 100vh;
     background-color: #0E0E10;
+    padding-left: 240px;
+    padding-top: 50px;
 }
 
 /* === navigation === */
@@ -228,6 +230,7 @@ a {
     height: 100%;
     position: fixed;
     top: 50px;
+    left: 0;
 }
 /* .nav_container {
     height: 811px;
@@ -472,10 +475,8 @@ a {
 }
  /* ===section=== */
 .section {
-    height: 400px;
+    height: 350px;
     width: 100%;
-    padding-left: 240px;
-    padding-top: 50px;
 }
 .section_container {
     display: flex;
@@ -553,9 +554,26 @@ a {
     color: #EFEFF1;
 }
 
-/* === section_container=== */
-.section_container {
-    columns: #EFEFF1;
+/* === section1=== */
+
+.section1{
+    padding: 25px 3rem 0;
+}
+.section1 h1{
+    color: #EFEFF1;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.content_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.content_image {
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 /* === JS class === */
