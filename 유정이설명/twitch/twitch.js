@@ -2,6 +2,7 @@ const toggleIcon = document.querySelector('.toggle_icon')
 const openIcon = document.querySelector('.open_icon')
 const closeIcon = document.querySelector('.close_icon')
 const information = document.querySelectorAll('.information')
+const main = document.querySelector('.main')
 
 toggleIcon.addEventListener('click', () => {
     console.log('cklicked')
@@ -23,6 +24,7 @@ openIcon.addEventListener('click', () => {
     document.querySelector('.group_icon').classList.add('flex')
     document.querySelector('.more').classList.add('none')
     document.getElementById('nav-search').classList.add('none')
+    main.classList.add('wide')
 })
 
 closeIcon.addEventListener('click', () => {
@@ -40,5 +42,6 @@ closeIcon.addEventListener('click', () => {
     document.querySelector('.group_icon').classList.remove('flex')
     document.querySelector('.more').classList.remove('none')
     document.getElementById('nav-search').classList.remove('none')
+    main.classList.remove('wide')
 })
 

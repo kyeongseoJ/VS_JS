@@ -224,7 +224,6 @@ a {
     background-color: #0E0E10;
     padding-left: 240px;
     padding-top: 50px;
-    overflow: scroll;
 }
 
 /* === navigation === */
@@ -584,6 +583,12 @@ a {
 .content_image img {
     width: 100%;
 }
+.content_image img:hover {
+    position: relative;
+    top: -5px;
+    right: -5px;
+    box-shadow: -6px 6px pink;
+}
 .content_section_image {
     width: 40px;
     height: 40px;
@@ -685,7 +690,9 @@ a {
 .flex {
     display: flex;
 }
-
+.wide{
+    padding-left: 50px;
+}
 
 
 
