@@ -1,0 +1,53 @@
+
+window.onresize = () => {
+  let innerWidth = window.innerWidth
+  if(innerWidth <= 1200) {
+    console.log('true')
+    document.querySelector('.nav').classList.add('show_nav')
+    document.querySelector('.nav_icons').style.display = 'none'
+    for(let j of channel) {
+      j.classList.add('none')
+    }
+    for(let i of information) {
+      i.classList.add('none')
+    }
+    document.querySelector('.follow_icon').classList.add('flex')
+    document.querySelector('.commend_icon').classList.add('flex'
+window.onresize = () => {
+  let innerWidth = window.innerWidth
+  if(innerWidth <= 1200) {
+    console.log('true')
+    document.querySelector('.nav').classList.add('show_nav')
+    document.querySelector('.nav_icons').style.display = 'none'
+    for(let j of channel) {
+      j.classList.add('none')
+    }
+    for(let i of information) {
+      i.classList.add('none')
+    }
+    document.querySelector('.follow_icon').classList.add('flex')
+    document.querySelector('.commend_icon').classList.add('flex')
+    document.querySelector('.group_icon').classList.add('flex')
+  
+    document.querySelector('.more').classList.add('none')
+    document.getElementById('nav-search').classList.add('none')
+    main.classList.add('wide')
+  }else {
+document.querySelector('.nav').classList.remove('show_nav')
+    document.querySelector('.nav_icons').style.display = 'flex'
+    document.querySelector('.close').classList.remove('flex')
+    for(let j of channel) {
+      j.classList.remove('none')
+    }
+    for(let i of information) {
+      i.classList.remove('none')
+    }
+document.querySelector('.follow_icon').classList.remove('flex')
+    document.querySelector('.commend_icon').classList.remove('flex')
+    document.querySelector('.group_icon').classList.remove('flex')
+  
+    document.querySelector('.more').classList.remove('none')
+    document.getElementById('nav-search').classList.remove('none')
+    main.classList.remove('wide')
+  }
+}
