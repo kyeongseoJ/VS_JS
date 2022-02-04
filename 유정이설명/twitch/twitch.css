@@ -716,6 +716,9 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
+.content_info2 {
+    margin-top: -5px;
+}
 .content_info2 h2{
     font-size: 14px;
     color: #DEDEE3;
@@ -724,7 +727,11 @@ a {
     font-size: 13px;
     color: #ADADB8;
 }
-
+.content_info2 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* === JS class === */
 .display_none {
