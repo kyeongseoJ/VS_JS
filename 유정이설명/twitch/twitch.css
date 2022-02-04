@@ -715,6 +715,7 @@ a {
 .content_section2{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
 }
 .content_info2 {
     margin-top: -5px;
@@ -727,7 +728,7 @@ a {
     font-size: 13px;
     color: #ADADB8;
 }
-.content_info2 div {
+.content_info2 > .content_text {
     display: flex;
     justify-content: space-between;
     align-items: center;
